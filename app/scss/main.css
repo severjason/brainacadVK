@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Bree+Serif|Merriweather);
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Merriweather", Helvetica, sans-serif; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+button.btn {
+  border-radius: 1px;
+  width: 150px;
+  height: 50px; }
+
+textarea.form-control {
+  border-radius: 1px; }
+
+li:not([class='submenu']):hover {
+  color: white;
+  background: black; }
+
+header {
+  margin: 0 auto;
+  max-width: 992px;
+  margin-bottom: 2rem; }
+
+div#main_content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 992px; }
+  div#main_content section#news_content {
+    width: 70%; }
+    div#main_content section#news_content img {
+      margin: 0 auto;
+      max-width: 200px;
+      margin-top: 2rem; }
+    div#main_content section#news_content p {
+      padding: 1rem;
+      text-align: justify; }
+    div#main_content section#news_content label {
+      width: 100%; }
+      div#main_content section#news_content label textarea {
+        resize: vertical;
+        width: 100%;
+        min-height: 100px;
+        margin: 0.5rem; }
+    div#main_content section#news_content .comment_field {
+      text-align: center;
+      padding: 0.5rem; }
+    div#main_content section#news_content .comments {
+      padding: 0.5rem;
+      margin: 2rem 0;
+      border: 1px solid #efefef; }
+
+#news_navigation {
+  width: 30%;
+  padding: 0.5rem; }
+
+footer {
+  margin: 0 auto;
+  max-width: 992px;
+  margin-top: 2rem; }
+  footer div#contacts {
+    margin: 0 auto; }
+  footer p.copyright {
+    margin-top: 1rem;
+    text-align: center; }
+
+@media all and (max-width: 768px) {
+  div#main_content {
+    display: block; }
+    div#main_content nav#news_navigation {
+      display: block;
+      width: 100%; }
+    div#main_content section#news_content:before {
+      clear: both; }
+    div#main_content section#news_content {
+      width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

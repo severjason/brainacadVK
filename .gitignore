@@ -1,0 +1,11 @@
+node_modules
+dist
+.idea
+.tmp
+.sass-cache
+app/bower_components
+test/bower_components
+bower_components
+app/images
+app/fonts
+app/lib

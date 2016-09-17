@@ -1,0 +1,3 @@
+@media print{header,nav#news_navigation,footer,.comment_field{display:none !important}}
+
+/*# sourceMappingURL=print.css.map */

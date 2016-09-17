@@ -1,0 +1,20 @@
+@media all and (max-width: 768px) {
+
+  div#main_content {
+    display: block;
+
+    nav#news_navigation {
+      display: block;
+      width:100%;
+    }
+    section#news_content:before {
+      clear: both;
+    }
+
+    section#news_content {
+      width:100%;
+    }
+  }
+
+
+}

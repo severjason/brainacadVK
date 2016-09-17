@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font_main;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+button.btn {
+  border-radius: $button_radius;
+  width: 150px;
+  height: 50px;
+}
+
+textarea.form-control {
+  border-radius:$form_radius;
+}
+
+li {
+  &:not([class='submenu']):hover {
+    color:white;
+    background: black;
+  }
+}

@@ -1,0 +1,5 @@
+header {
+  @include blockToCenter;
+  max-width: $content_max_width;
+  margin-bottom: 2rem;
+}

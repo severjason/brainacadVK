@@ -1,0 +1,14 @@
+footer {
+  @include blockToCenter;
+  max-width: $content_max_width;
+  margin-top: 2rem;
+
+  div#contacts {
+    @include blockToCenter;
+  }
+
+  p.copyright {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
