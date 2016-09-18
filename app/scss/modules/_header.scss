@@ -1,5 +1,160 @@
-header {
-  @include blockToCenter;
-  max-width: $content_max_width;
-  margin-bottom: 2rem;
+#page_header_wrap {
+  z-index: 200;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: $main_color;
+  box-sizing: content-box;
+
+
+
+  header {
+    position: relative;
+    width: $content_max_width;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 12.5px;
+    padding: 0 15px;
+
+    .buttons {
+      padding-left: 15px;
+    }
+    div.head_nav.top_nav {
+      &:hover {
+        background-color: $top_nav_hover_color;
+      }
+    }
+
+    div.head_nav {
+      float: left;
+      height: inherit;
+
+      .top_home {
+        top:0;
+        width: 165px;
+        height: 42px;
+        display: block;
+
+        #vk_logo {
+          background: url("../../images/head_icons.png");
+          background-position: 0 -98px;
+          height: 19px;
+          width: 33px;
+          margin: 11px 10px 0 0;
+        } //#vk_logo
+
+      } // .top_home
+
+      .top_nav {
+        margin: 0;
+        padding: 0!important;
+        width: 46px;
+        position: relative;
+        display: inline-block;
+        color: #000;
+        opacity: 1;
+        -o-transition: opacity 100ms linear;
+        transition: opacity 100ms linear;
+
+        &:hover {
+            background-color: $top_nav_hover_color;
+        }
+
+        .top_nav_btn_icon {
+          margin: 11px auto;
+          background: url(../../images/head_icons.png) no-repeat;
+          height: 20px;
+          width: 20px;
+        } //.top_nav_btn_icon
+
+        .top_notification {
+          background-position: -5px -23px;
+        } // .top_notification
+
+        .top_music {
+          background-position: -5px -53px;
+        }
+
+      } //.top_nav
+
+
+      .vk_search {
+
+        #search {
+          border: 0;
+          box-sizing: border-box;
+          padding: 6px 6px 6px 19px;
+          margin: 7px 0;
+          height: 28px;
+          line-height: 16px;
+          width: 230px;
+          border-radius: 14px;
+          -o-transition: background-color 0.05s, color 0.05s;
+          transition: background-color 0.05s, color 0.05s;
+          background: $search_background url(../../images/dev_head_magglass.png) no-repeat;
+          border-left: 8px solid transparent;
+          background-position: left 8px;
+          color: $search_color;
+
+          &:focus,  &:active {
+            outline: none;
+            background: #fff;
+          }
+
+
+        }
+      }
+
+      #top_profile_link {
+        display: inline-block;
+        white-space: nowrap;
+        line-height: 42px;
+        height: 42px;
+        overflow: hidden;
+        padding-left: 10px;
+        color: #fff;
+        font-weight: 700;
+        -webkit-font-smoothing: antialiased;
+
+        .top_profile_name {
+          padding-right: 10px;
+          display: inline-block;
+          vertical-align: top;
+
+        }
+
+        .top_profile_img {
+          display: inline-block;
+          vertical-align: top;
+          width: 28px;
+          height: 28px;
+          border-radius: 14px;
+          margin: 7px 0;
+        }
+
+        .top_profile_arrow {
+          display: inline-block;
+          vertical-align: top;
+          background: url(../../images/head_arrow.png) no-repeat;
+          background-position: right 0;
+          margin: 20px 8px 0 7px;
+          width: 8px;
+          height: 4px;
+          opacity: 0.45;
+          filter: alpha(opacity=45);
+        }
+
+
+      } //#top_profile_link
+
+    }// div.head_nav
+
+
+  }
+
+
 }
+
+
+

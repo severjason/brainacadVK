@@ -1,4 +1,140 @@
-#news_navigation {
-  width:30%;
-  padding: 0.5rem;
-}
+#side_bar {
+
+  z-index: 200;
+
+  .left_icon_comments {
+    width: 12px;
+    height: 12px;
+    margin: 8px 11px;
+    background: url(../../images/comments.png) no-repeat;
+    background-size: 100%;
+  }// .left_icon_comments
+
+  .left_icon {
+    width: 35px;
+    height: 25px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../../images/menu_icon.png) no-repeat 7px -441px;
+  } //.left_icon
+
+  ol {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+
+    li {
+      margin-left: -8px;
+
+      .left_row {
+        color: $text_color;
+        border: 0;
+        display: block;
+        white-space: nowrap;
+
+        &:hover {
+          background: $menu_backgound_color;
+          text-decoration: none;
+          border-radius: 2px;
+        }
+
+        .left_fixer {
+          display: block;
+        }
+
+        .left_label {
+          height: 28px;
+          line-height: 28px;
+          font-size: 12.5px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+      } //.left_row
+
+    } //li
+
+    #l_line {
+      .l_line {
+        display: block;
+        margin-top: 9px;
+        margin-left: 27px;
+        margin-right: 6px;
+        padding-top: 9px;
+        border-top: 1px solid #dfe2e8;
+      }
+    } //#l_line
+
+  } //ol
+
+  #side_bar_inner {
+    position: fixed;
+    margin-top: 0;
+    top: 50px;
+    z-index: 10;
+    width: 149px;
+    padding: 15px 0 10px;
+
+    #l_profile {
+      .left_icon {
+        background-position: 7px 6px;
+      }
+    }
+    #l_feed {
+      .left_icon {
+        background-position: 7px -917px;
+      }
+    }
+    #l_masseges {
+      .left_icon {
+        background-position: 7px -21px;
+      }
+    }
+    #l_friends {
+      .left_icon {
+        background-position: 7px -77px;
+      }
+    }
+    #l_groups {
+      .left_icon {
+        background-position: 7px -105px;
+      }
+    }
+    #l_fotos {
+      .left_icon {
+        background-position: 7px -133px;
+      }
+    }
+    #l_audio {
+      .left_icon {
+        background-position: 7px -161px;
+      }
+    }
+    #l_video {
+      .left_icon {
+        background-position: 7px -189px;
+      }
+    }
+    #l_games {
+      .left_icon {
+        background-position: 7px -217px;
+      }
+    }
+    #l_bookmarks {
+      .left_icon {
+        background-position: 7px -301px;
+      }
+    }
+    #l_docs {
+      .left_icon {
+        background-position: 7px -273px;
+      }
+    }
+    #l_control {
+      .left_icon {
+        background-position: 7px -217px;
+      }
+    }
+  } // #side_bar_inner
+
+}//#side_bar

@@ -12,13 +12,14 @@ const gulp = require('gulp'),
  *  All paths
  */
 const path = {
-    scss: 'app/scss/**/*.scss',
-    images: 'app/images/**/*.+(png|jpg|gif|svg)',
+    app: 'app',
+    scss: this.app + '/scss/**/*.scss',
+    images: this.app + '/images/**/*.+(png|jpg|gif|svg)',
     fonts: ['bower_components/bootstrap-sass/assets/fonts/**/*'],
     libJs: [
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js'],
-    js: ['app/js/**/*.js']
+    js: [this.app + '/js/**/*.js']
 };
 
 /**
@@ -27,7 +28,7 @@ const path = {
 gulp.task('browserSync', function () {
     browserSync({
         server: {
-            baseDir: 'app'
+            baseDir: path.app + "/"
         }
     });
 });
@@ -38,11 +39,16 @@ gulp.task('browserSync', function () {
 gulp.task('css', function () {
     return gulp.src(path.scss)
         .pipe($.sourcemaps.init())
+        .pipe($.compass({
+            config_file: './config.rb',
+            css: path.app + '/css',
+            sass: path.app + '/scss'
+        }))
         //.pipe($.sass({outputStyle: 'expanded'}))
         .pipe($.sass({outputStyle: 'compressed'}))
         .on('error', $.sass.logError)
         .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest(path.app + '/css'))
         .pipe(browserSync.reload({
             stream: true
         }));
@@ -53,14 +59,14 @@ gulp.task('css', function () {
  */
 gulp.task('js', function () {
     return gulp.src(path.libJs)
-        .pipe(gulp.dest('app/lib'));
+        .pipe(gulp.dest(path.app + '/lib'));
 });
 
 /**
  *  Concat all js and css into one file
  */
 gulp.task('useref', function () {
-    return gulp.src('app/*.html')
+    return gulp.src(path.app + '/*.html')
         .pipe($.useref())
         .pipe($.if('*.js', $.babel({
             presets: ['es2015']
@@ -86,7 +92,7 @@ gulp.task('img', function () {
  */
 gulp.task('fonts', function () {
     return gulp.src(path.fonts)
-        .pipe(gulp.dest('app/fonts'))
+        .pipe(gulp.dest(path.app + '/fonts'))
         .pipe(gulp.dest('dist/fonts'));
 });
 
@@ -110,6 +116,7 @@ gulp.task('clean:dist', function (callback) {
  */
 gulp.task('watch', ['browserSync', 'css'], function () {
     gulp.watch(path.scss, ['css']);
+    gulp.watch(["app/*.html","app/scss/*.scss"]).on('change', browserSync.reload);
 });
 
 /**

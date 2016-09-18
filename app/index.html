@@ -5,13 +5,13 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Page Title</title>
+    <title>Сергей Северинов</title>
 
     <meta name="description" content="">
     <meta name="language" content="en-us"/>
     <!-- Mobile-friendly viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/png" href="images/logo-vk.png" />
     <!-- build:css css/libs.min.css -->
     <link href="./css/libs.css" rel="stylesheet" media="all">
     <!-- endbuild -->
@@ -30,165 +30,191 @@
     <![endif]-->
 </head>
 <body>
+<div id="page_layout" class="min_height">
+    <div id="page_header_wrap">
+        <header role="banner">
+            <div class="head_nav">
+                <a class="top_home" href="/">
+                    <div id="vk_logo">
 
-<header role="banner">
-    <h2 class="text-center">Brain Academy news</h2>
-</header>
-<div id="main_content">
-    <nav role="navigation" id="news_navigation">
+                    </div>
+                </a>
+            </div>
+            <div class="head_nav">
+                <div class="vk_search">
+                    <input type="text" id="search" aria-label="Поиск" placeholder="Поиск">
+                </div>
+            </div>
+            <div class="head_nav buttons">
+                <a class="top_nav fl_l" href="#">
+                    <div class="top_nav_btn_icon top_notification">
 
-        <h4>News from group 3</h4>
-        <ul>
-            <li> Cat 1</li>
-            <li> Cat 2</li>
-            <li> Cat 3</li>
-            <li class="submenu"> Cat
-                <ul>
-                    <li>CubCat 1</li>
-                    <li>CubCat 2</li>
-                    <li>CubCat 3</li>
-                    <li>CubCat 4</li>
-                    <li>CubCat 5</li>
-                </ul>
-            </li>
-            <li> Cat 5</li>
-            <li> Cat 6</li>
-            <li> Cat 7</li>
+                    </div>
+                </a>
+                <a class="top_nav fl_l" href="#">
+                    <div class="top_nav_btn_icon top_music">
 
-        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="head_nav fl_r top_nav">
+                <a id="top_profile_link">
+                    <div class="top_profile_name fl_l">
+                        Сергей
+                    </div>
+                    <img class="top_profile_img fl_l" alt="Сергей" src="images/profile_img_small.jpg">
+                    <div class="top_profile_arrow fl_l"></div>
+                </a>
+            </div>
+        </header>
+    </div>
+    <div id="side_bar" class="fl_l">
+        <div id="side_bar_inner">
+            <ol>
+                <li id="l_profile">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Страница</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_feed">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Новости</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_masseges">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Сообщения</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_friends">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Друзья</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_groups">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Группы</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_fotos">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Фотографии</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_audio">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Аудиозаписи</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_video">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Видеозаписи</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_games">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Игры</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_comments">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon_comments fl_l"></span>
+                            <span class="left_label">Комментарии</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_line">
+                    <span class="l_line"></span>
+                </li>
+                <li id="l_bookmarks">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Закладки</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_docs">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Документы</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="l_control">
+                    <a class="left_row">
+                        <span class="left_fixer">
+                            <span class="left_icon fl_l"></span>
+                            <span class="left_label">Управление</span>
+                        </span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
 
-    </nav>
-    <section role="main" id="news_content">
-        <img alt="some news" src="images/news.jpg"/>
-        <hr/>
-        <p>
-            The European Union needs a military headquarters to work towards a common military force, the Commission
-            president has told MEPs in Strasbourg.
-            Jean-Claude Juncker said the lack of a "permanent structure" resulted in money being wasted on missions.
-            Part of his annual state of the union address was devoted to the UK's unexpected vote to leave the EU.
-            He insisted that the bloc was not at risk and urged Brexit negotiations to take place as quickly as
-            possible.
-            The Brexit vote has given added impetus to plans for greater defence co-operation, because the UK has always
-            objected to the potential conflict of interest with Nato.
-            But Mr Juncker said a common military force "should be in complement to Nato". "More defence in Europe
-            doesn't
-            mean less transatlantic solidarity."
-            <br/>
-            A European Defence Fund would stimulate military research and development, he said.
-            Brexit: All you need to know about the UK leaving the EU
-            Brexit vote revives dream of EU army
-            Why a military HQ? By BBC Defence correspondent Jonathan Marcus
-            All EU members have military forces; most are also members of Nato; and several have extensive experience of
-            operations abroad, from peace-keeping to war-fighting.
-            The real question is how to organise these component parts to get greater security. Mr Juncker insists that
-            the
-            EU must have a role here.
-            A Spanish force boards a boat off LibyaImage copyrightEUNAVFOR
-            Image caption
-            Many member states are taking part in an EU naval mission off the coast of Libya
-            He wants to improve EU command and control facilities and appears to be suggesting that EU civil and
-            military
-            aspects of a given mission should be run out of the same headquarters.
-            He also insists that whatever the EU does it should not detract from Nato. But defence resources are finite.
-            His
-            critics will say nothing should be done that duplicates existing Nato activities, as that sends a signal of
-            disarray in Western ranks to Moscow.
-            On Brexit, Mr Juncker warned that the UK could not expect selective "a la carte" access to the internal
-            market
-            without accepting free movement of people.
-            The single market has dominated the Brexit debate in the UK.
-            Prime Minister Theresa May distanced herself last week from remarks by Brexit minister David Davis, when he
-            said
-            remaining in the single market would be "very improbable" if it meant giving up control of British borders.
-            Upbeat message - BBC News Europe editor Katya Adler, Strasbourg
-            Jean-Claude Juncker and his team agonised over the wording of Wednesday's speech.
-            The UK's vote to leave the EU is undoubtedly one of the biggest crises the bloc has ever faced but Mr
-            Juncker
-            was determined not to dwell on it.
-            Jump media playerMedia player helpOut of media player. Press enter to return or tab to continue.
-            Media captionJean-Claude Juncker: No "a la carte" access to EU internal market for UK
-            There were few words on Brexit. His main message: "The European project continues. Let's choose to look
-            forward.
-            Be positive."
-            <br/>
-            Applause resounded around the chamber of the European Parliament but how will the voters outside react?
-            Are they even listening? The drumbeat of nationalist, Eurosceptic populism reverberates around the
-            continent.
-            Public trust in the establishment is low - whether traditional politicians, bankers or EU bureaucrats - and
-            Mr
-            Juncker is an unelected president.
-            The Commission president's state of the union speech - introduced in 2010 - is modelled on the annual speech
-            by
-            the US president and aims to report on the condition of the EU and outline a future legislative agenda.
-            Mr Juncker admitted the EU was facing an "existential crisis", but he said it had to deliver "concrete
-            results"
-            in response, including:
-            Maintaining stability and sharing the burden of economic downturn, such as doubling investment in the EU to
-            €500bn (£425bn; $560bn) in the next five years and creating an investment fund for Africa
-            Creating solidarity in the Union - such as protecting unaccompanied minors migrating to the EU - but Mr
-            Juncker
-            said this must "come from the heart" and could not "be forced or imposed"
-            Promoting security including strengthening the EU's borders and promoting greater security co-operation
-            between
-            member states, as well as greater military centralisation.
-            He urged a renewed focus on the EU as a "driving force that can bring about unification, for instance in
-            Cyprus".
-            <br/>
-            Splits in the Union had left space for "galloping populism," he said, "and we cannot except that, as
-            populism
-            doesn't solve problems, on the contrary populism creates problems".
-            In a blunt criticism of recent attacks on immigrants in the UK, he said he would "never accept Polish
-            workers
-            being beaten up, harassed or even murdered on the streets of Essex".
-        </p>
-        <hr/>
-        <div class="comment_field">
-            <label> Please live a comment:
-                <br>
-                <textarea class="form-control">
-                </textarea>
-            </label>
-            <button name="sendComment" class="btn btn-default">Send</button>
+    <div id="page_body" class="fl_r" >
+        <div class="narrow_column_wrap fl_l">
+            <div class="narrow_column">
+                <div class="page_block page_photo">
+                    <div class="img_wrap" >
+                        <a href="#">
+                            <img src="images/profile_img_mid.jpg" alt="avatar" class="page_avatar_img">
+                        </a>
+                    </div>
+                    <div class="page_action fl_l">
+                        <a href="#">Редактировать</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="page_block min_height"></div>
+            </div>
         </div>
-        <div class="comments">
-            <span class="glyphicon glyphicon-user"></span>
-            <span>user 1</span>
-            <time datetime="2016-09-14"> - 14.09.2016</time>
-            <br/>
-            <p>Some comment</p>
+        <div class="wide_column_wrap">
+            <div class="wide_column fl_r">
+                <div class="page_block">
+                    <div class="page_info min_height">
+                        Text
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="comments">
-            <span class="glyphicon glyphicon-user"></span>
-            <span>user 2</span>
-            <time datetime="2016-09-14"> - 14.09.2016</time>
-            <br/>
-            <p>Some comment</p>
-        </div>
-        <div class="comments">
-            <span class="glyphicon glyphicon-user"></span>
-            <span>user 3</span>
-            <time datetime="2016-09-14"> - 14.09.2016</time>
-            <br/>
-            <p>Some comment</p>
-        </div>
-    </section>
+    </div>
+    <div class="clear"></div>
 </div>
 
 
-<footer role="contentinfo">
 
-    <div id="contacts" class="text-center">
-        <a href="tel:+380505436017">+38(050)543-60-17</a>
-        <br/>
-        <a href="mailto:severjason@ex.ua">severjason@ex.ua</a>
 
-    </div>
-
-    <p class="copyright">Brain Academy &copy;
-        <time datetime="2016">2016</time>
-    </p>
-
-</footer>
 <!--build:js js/main.min.js -->
 <script src="./lib/jquery.min.js"></script>
 <script src="./lib/bootstrap.min.js"></script>
