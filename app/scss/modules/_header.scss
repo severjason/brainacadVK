@@ -25,7 +25,9 @@
         background-color: $top_nav_hover_color;
       }
     }
-
+    div.head_nav.top_nav {
+      float: right;
+    }
     div.head_nav {
       float: left;
       height: inherit;
@@ -48,7 +50,7 @@
 
       .top_nav {
         margin: 0;
-        padding: 0!important;
+        padding: 0;
         width: 46px;
         position: relative;
         display: inline-block;

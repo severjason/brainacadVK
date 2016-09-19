@@ -79,12 +79,12 @@ textarea.form-control {
 
 /* line 66, ../scss/_base.scss */
 .fl_r {
-  float: right !important;
+  float: right;
 }
 
 /* line 69, ../scss/_base.scss */
 .fl_l {
-  float: left !important;
+  float: left;
 }
 
 /* line 72, ../scss/_base.scss */
@@ -125,19 +125,23 @@ textarea.form-control {
 #page_header_wrap header div.head_nav.top_nav:hover {
   background-color: #486991;
 }
-/* line 29, ../scss/modules/_header.scss */
+/* line 28, ../scss/modules/_header.scss */
+#page_header_wrap header div.head_nav.top_nav {
+  float: right;
+}
+/* line 31, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav {
   float: left;
   height: inherit;
 }
-/* line 33, ../scss/modules/_header.scss */
+/* line 35, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_home {
   top: 0;
   width: 165px;
   height: 42px;
   display: block;
 }
-/* line 39, ../scss/modules/_header.scss */
+/* line 41, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_home #vk_logo {
   background: url("../images/head_icons.png");
   background-position: 0 -98px;
@@ -145,10 +149,10 @@ textarea.form-control {
   width: 33px;
   margin: 11px 10px 0 0;
 }
-/* line 49, ../scss/modules/_header.scss */
+/* line 51, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_nav {
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
   width: 46px;
   position: relative;
   display: inline-block;
@@ -157,26 +161,26 @@ textarea.form-control {
   -o-transition: opacity 100ms linear;
   transition: opacity 100ms linear;
 }
-/* line 60, ../scss/modules/_header.scss */
+/* line 62, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_nav:hover {
   background-color: #486991;
 }
-/* line 64, ../scss/modules/_header.scss */
+/* line 66, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_nav .top_nav_btn_icon {
   margin: 11px auto;
   background: url(../images/head_icons.png) no-repeat;
   height: 20px;
   width: 20px;
 }
-/* line 71, ../scss/modules/_header.scss */
+/* line 73, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_nav .top_notification {
   background-position: -5px -23px;
 }
-/* line 75, ../scss/modules/_header.scss */
+/* line 77, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_nav .top_music {
   background-position: -5px -53px;
 }
-/* line 84, ../scss/modules/_header.scss */
+/* line 86, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .vk_search #search {
   border: 0;
   box-sizing: border-box;
@@ -193,12 +197,12 @@ textarea.form-control {
   background-position: left 8px;
   color: #d9e2ec;
 }
-/* line 100, ../scss/modules/_header.scss */
+/* line 102, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .vk_search #search:focus, #page_header_wrap header div.head_nav .vk_search #search:active {
   outline: none;
   background: #fff;
 }
-/* line 109, ../scss/modules/_header.scss */
+/* line 111, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav #top_profile_link {
   display: inline-block;
   white-space: nowrap;
@@ -210,13 +214,13 @@ textarea.form-control {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 120, ../scss/modules/_header.scss */
+/* line 122, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav #top_profile_link .top_profile_name {
   padding-right: 10px;
   display: inline-block;
   vertical-align: top;
 }
-/* line 127, ../scss/modules/_header.scss */
+/* line 129, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav #top_profile_link .top_profile_img {
   display: inline-block;
   vertical-align: top;
@@ -225,7 +229,7 @@ textarea.form-control {
   border-radius: 14px;
   margin: 7px 0;
 }
-/* line 136, ../scss/modules/_header.scss */
+/* line 138, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav #top_profile_link .top_profile_arrow {
   display: inline-block;
   vertical-align: top;
