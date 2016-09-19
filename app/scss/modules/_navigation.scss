@@ -1,21 +1,23 @@
 #side_bar {
 
   z-index: 200;
+  /*
 
   .left_icon_comments {
     width: 12px;
     height: 12px;
     margin: 8px 11px;
-    background: url(../../images/comments.png) no-repeat;
+    background: url(../images/comments.png) no-repeat;
     background-size: 100%;
   }// .left_icon_comments
+  */
 
   .left_icon {
     width: 35px;
     height: 25px;
     opacity: 0.75;
     filter: alpha(opacity=75);
-    background: url(../../images/menu_icon.png) no-repeat 7px -441px;
+    background: url(../images/menu_icon.png) no-repeat 7px -441px;
   } //.left_icon
 
   ol {
@@ -70,7 +72,7 @@
   #side_bar_inner {
     position: fixed;
     margin-top: 0;
-    top: 50px;
+    top: 42px;
     z-index: 10;
     width: 149px;
     padding: 15px 0 10px;

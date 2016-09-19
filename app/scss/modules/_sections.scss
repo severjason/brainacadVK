@@ -47,8 +47,13 @@
         margin-top: 12px;
         line-height: 30px;
         text-align: center;
+        border-radius: 2px;
         background-color: #e5ebf1;
         color: #55677d;
+
+        &:hover {
+            background-color: #dfe6ed;
+        }
       }
     }//.page_action
 

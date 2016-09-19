@@ -139,7 +139,7 @@ textarea.form-control {
 }
 /* line 39, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_home #vk_logo {
-  background: url("../../images/head_icons.png");
+  background: url("../images/head_icons.png");
   background-position: 0 -98px;
   height: 19px;
   width: 33px;
@@ -164,7 +164,7 @@ textarea.form-control {
 /* line 64, ../scss/modules/_header.scss */
 #page_header_wrap header div.head_nav .top_nav .top_nav_btn_icon {
   margin: 11px auto;
-  background: url(../../images/head_icons.png) no-repeat;
+  background: url(../images/head_icons.png) no-repeat;
   height: 20px;
   width: 20px;
 }
@@ -188,7 +188,7 @@ textarea.form-control {
   border-radius: 14px;
   -o-transition: background-color 0.05s, color 0.05s;
   transition: background-color 0.05s, color 0.05s;
-  background: #305075 url(../../images/dev_head_magglass.png) no-repeat;
+  background: #305075 url(../images/dev_head_magglass.png) no-repeat;
   border-left: 8px solid transparent;
   background-position: left 8px;
   color: #d9e2ec;
@@ -229,7 +229,7 @@ textarea.form-control {
 #page_header_wrap header div.head_nav #top_profile_link .top_profile_arrow {
   display: inline-block;
   vertical-align: top;
-  background: url(../../images/head_arrow.png) no-repeat;
+  background: url(../images/head_arrow.png) no-repeat;
   background-position: right 0;
   margin: 20px 8px 0 7px;
   width: 8px;
@@ -289,19 +289,24 @@ textarea.form-control {
   margin-top: 12px;
   line-height: 30px;
   text-align: center;
+  border-radius: 2px;
   background-color: #e5ebf1;
   color: #55677d;
 }
-/* line 57, ../scss/modules/_sections.scss */
+/* line 54, ../scss/modules/_sections.scss */
+#page_body .narrow_column .page_action a:hover {
+  background-color: #dfe6ed;
+}
+/* line 62, ../scss/modules/_sections.scss */
 #page_body .wide_column_wrap {
   margin-left: 245px;
 }
-/* line 61, ../scss/modules/_sections.scss */
+/* line 66, ../scss/modules/_sections.scss */
 #page_body .wide_column_wrap .wide_column {
   position: relative;
   width: 550px;
 }
-/* line 65, ../scss/modules/_sections.scss */
+/* line 70, ../scss/modules/_sections.scss */
 #page_body .wide_column_wrap .wide_column .page_info {
   padding: 15px 20px 20px;
 }
@@ -309,51 +314,53 @@ textarea.form-control {
 /* line 1, ../scss/modules/_navigation.scss */
 #side_bar {
   z-index: 200;
+  /*
+
+  .left_icon_comments {
+    width: 12px;
+    height: 12px;
+    margin: 8px 11px;
+    background: url(../images/comments.png) no-repeat;
+    background-size: 100%;
+  }// .left_icon_comments
+  */
 }
-/* line 5, ../scss/modules/_navigation.scss */
-#side_bar .left_icon_comments {
-  width: 12px;
-  height: 12px;
-  margin: 8px 11px;
-  background: url(../../images/comments.png) no-repeat;
-  background-size: 100%;
-}
-/* line 13, ../scss/modules/_navigation.scss */
+/* line 15, ../scss/modules/_navigation.scss */
 #side_bar .left_icon {
   width: 35px;
   height: 25px;
   opacity: 0.75;
   filter: alpha(opacity=75);
-  background: url(../../images/menu_icon.png) no-repeat 7px -441px;
+  background: url(../images/menu_icon.png) no-repeat 7px -441px;
 }
-/* line 21, ../scss/modules/_navigation.scss */
+/* line 23, ../scss/modules/_navigation.scss */
 #side_bar ol {
   list-style: none;
   margin: 0 0 10px;
   padding: 0;
 }
-/* line 26, ../scss/modules/_navigation.scss */
+/* line 28, ../scss/modules/_navigation.scss */
 #side_bar ol li {
   margin-left: -8px;
 }
-/* line 29, ../scss/modules/_navigation.scss */
+/* line 31, ../scss/modules/_navigation.scss */
 #side_bar ol li .left_row {
   color: #285473;
   border: 0;
   display: block;
   white-space: nowrap;
 }
-/* line 35, ../scss/modules/_navigation.scss */
+/* line 37, ../scss/modules/_navigation.scss */
 #side_bar ol li .left_row:hover {
   background: #e1e5eb;
   text-decoration: none;
   border-radius: 2px;
 }
-/* line 41, ../scss/modules/_navigation.scss */
+/* line 43, ../scss/modules/_navigation.scss */
 #side_bar ol li .left_row .left_fixer {
   display: block;
 }
-/* line 45, ../scss/modules/_navigation.scss */
+/* line 47, ../scss/modules/_navigation.scss */
 #side_bar ol li .left_row .left_label {
   height: 28px;
   line-height: 28px;
@@ -361,7 +368,7 @@ textarea.form-control {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 58, ../scss/modules/_navigation.scss */
+/* line 60, ../scss/modules/_navigation.scss */
 #side_bar ol #l_line .l_line {
   display: block;
   margin-top: 9px;
@@ -370,60 +377,60 @@ textarea.form-control {
   padding-top: 9px;
   border-top: 1px solid #dfe2e8;
 }
-/* line 70, ../scss/modules/_navigation.scss */
+/* line 72, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner {
   position: fixed;
   margin-top: 0;
-  top: 50px;
+  top: 42px;
   z-index: 10;
   width: 149px;
   padding: 15px 0 10px;
 }
-/* line 79, ../scss/modules/_navigation.scss */
+/* line 81, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_profile .left_icon {
   background-position: 7px 6px;
 }
-/* line 84, ../scss/modules/_navigation.scss */
+/* line 86, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_feed .left_icon {
   background-position: 7px -917px;
 }
-/* line 89, ../scss/modules/_navigation.scss */
+/* line 91, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_masseges .left_icon {
   background-position: 7px -21px;
 }
-/* line 94, ../scss/modules/_navigation.scss */
+/* line 96, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_friends .left_icon {
   background-position: 7px -77px;
 }
-/* line 99, ../scss/modules/_navigation.scss */
+/* line 101, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_groups .left_icon {
   background-position: 7px -105px;
 }
-/* line 104, ../scss/modules/_navigation.scss */
+/* line 106, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_fotos .left_icon {
   background-position: 7px -133px;
 }
-/* line 109, ../scss/modules/_navigation.scss */
+/* line 111, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_audio .left_icon {
   background-position: 7px -161px;
 }
-/* line 114, ../scss/modules/_navigation.scss */
+/* line 116, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_video .left_icon {
   background-position: 7px -189px;
 }
-/* line 119, ../scss/modules/_navigation.scss */
+/* line 121, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_games .left_icon {
   background-position: 7px -217px;
 }
-/* line 124, ../scss/modules/_navigation.scss */
+/* line 126, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_bookmarks .left_icon {
   background-position: 7px -301px;
 }
-/* line 129, ../scss/modules/_navigation.scss */
+/* line 131, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_docs .left_icon {
   background-position: 7px -273px;
 }
-/* line 134, ../scss/modules/_navigation.scss */
+/* line 136, ../scss/modules/_navigation.scss */
 #side_bar #side_bar_inner #l_control .left_icon {
   background-position: 7px -217px;
 }

@@ -37,7 +37,7 @@
         display: block;
 
         #vk_logo {
-          background: url("../../images/head_icons.png");
+          background: url("../images/head_icons.png");
           background-position: 0 -98px;
           height: 19px;
           width: 33px;
@@ -63,7 +63,7 @@
 
         .top_nav_btn_icon {
           margin: 11px auto;
-          background: url(../../images/head_icons.png) no-repeat;
+          background: url(../images/head_icons.png) no-repeat;
           height: 20px;
           width: 20px;
         } //.top_nav_btn_icon
@@ -92,7 +92,7 @@
           border-radius: 14px;
           -o-transition: background-color 0.05s, color 0.05s;
           transition: background-color 0.05s, color 0.05s;
-          background: $search_background url(../../images/dev_head_magglass.png) no-repeat;
+          background: $search_background url(../images/dev_head_magglass.png) no-repeat;
           border-left: 8px solid transparent;
           background-position: left 8px;
           color: $search_color;
@@ -136,7 +136,7 @@
         .top_profile_arrow {
           display: inline-block;
           vertical-align: top;
-          background: url(../../images/head_arrow.png) no-repeat;
+          background: url(../images/head_arrow.png) no-repeat;
           background-position: right 0;
           margin: 20px 8px 0 7px;
           width: 8px;
