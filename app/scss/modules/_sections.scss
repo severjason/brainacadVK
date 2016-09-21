@@ -28,7 +28,13 @@
       padding: 15px;
       font-size: 12.5px;
     } //page_photo
+    .page_friends {
+      height: 425px;
+    }
 
+    .page_list_module {
+      height: 1205px;
+    }
 
     .page_avatar_img {
       vertical-align: top;
@@ -67,11 +73,164 @@
       position: relative;
       width: 550px;
 
-      .page_info {
-        padding: 15px 20px 20px;
+      a {
+        color: $links_color;
+        text-decoration: none;
+        cursor: pointer;
       }
+      .page_block {
+
+        .page_info {
+          padding: 15px 20px 20px;
+
+          .page_top {
+            padding-bottom: 11px;
+            border-bottom: 1px solid #e7e8ec;
+
+            .page_name {
+
+              font-size: 19px;
+              line-height: 25px;
+              margin: -1px 0;
+            }
+            //.page_top
+
+            .page_status {
+              font-size: 12.5px;
+              margin-top: 5px;
+              line-height: 18px;
+              color: $main_gray_color;
+            }
+            //.page_status
+
+            .change_status {
+              padding: 2px 0 2px;
+              margin: 0 -6px;
+
+              span {
+                display: block;
+                margin: 2px;
+                margin-top: 0;
+                margin-left: 0;
+                padding-left: 6px;
+                color: $main_gray_color;
+              }
+
+              &:hover {
+                cursor: pointer;
+                background-color: #f0f2f5;
+              }
+            }
+            //.change_status
+
+          }
+          //.page_top
+
+          .profile_info {
+            padding-top: 10px;
+            line-height: 150%;
+
+            .profile_row {
+              padding-top: 5px;
+            }
+
+            .pr_label {
+              float: left;
+              width: 165px;
+              color: $main_gray_color;
+
+            }
+            .pr_labeled {
+
+              a {
+                color: $links_color;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+
+              }
+            }
+
+            .profile_more_info {
+              a {
+                display: block;
+                padding-left: 165px;
+                margin: 10px 0 -5px;
+                border-radius: 2px;
+                height: 34px;
+                line-height: 32px;
+
+                &:hover {
+                  background-color: $links_background;
+                  text-decoration: none;
+                }
+              }
+            }
+
+          }
+          //.profile_info
+
+        }
+        //.page_info
+
+        .page_counts {
+          text-align: center;
+          border-top: 1px solid #e7e8ec;
+          max-height: 69px;
+          overflow: hidden;
+
+          a.page_counter {
+            display: inline-block;
+            padding: 15px;
+            color: $links_color;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover div {
+              color: $links_color;
+            }
+
+            .count {
+              font-size: 19px;
+              //color: #42648b;
+              padding-bottom: 3px;
+              line-height: 21px;
+            }
+            .count_label {
+              //color: #828282;
+              color: $main_gray_color;
+              line-height: 15px;
+            }
+          }
+        }
+        //.page_counts
+
+
+      }//.page_block
+
+      .page_photos {
+        height: 192px;
+      } //.page_photos
+
+      .user_post {
+        height: 42px;
+      } //.user_photos
+
+      .user_wall {
+
+      }
+
+
+
     }//.wide_column
+
 
   }//.wide_column_wrap
 
 }//#page_body
+
+
+

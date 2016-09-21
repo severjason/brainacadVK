@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Bree+Serif|Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Roboto|Bree+Serif|Merriweather);
 /* line 1, ../scss/_base.scss */
 html {
   font-size: 12.5px;
@@ -95,7 +94,7 @@ textarea.form-control {
 
 /* line 77, ../scss/_base.scss */
 .min_height {
-  min-height: 1000px;
+  min-height: 2000px;
 }
 
 /* line 1, ../scss/modules/_header.scss */
@@ -274,18 +273,26 @@ textarea.form-control {
   padding: 15px;
   font-size: 12.5px;
 }
-/* line 33, ../scss/modules/_sections.scss */
+/* line 31, ../scss/modules/_sections.scss */
+#page_body .narrow_column .page_friends {
+  height: 425px;
+}
+/* line 35, ../scss/modules/_sections.scss */
+#page_body .narrow_column .page_list_module {
+  height: 1205px;
+}
+/* line 39, ../scss/modules/_sections.scss */
 #page_body .narrow_column .page_avatar_img {
   vertical-align: top;
   border-radius: 2px;
   max-width: 200px;
 }
-/* line 39, ../scss/modules/_sections.scss */
+/* line 45, ../scss/modules/_sections.scss */
 #page_body .narrow_column .page_action {
   position: relative;
   width: 200px;
 }
-/* line 43, ../scss/modules/_sections.scss */
+/* line 49, ../scss/modules/_sections.scss */
 #page_body .narrow_column .page_action a {
   display: block;
   width: 100%;
@@ -297,22 +304,142 @@ textarea.form-control {
   background-color: #e5ebf1;
   color: #55677d;
 }
-/* line 54, ../scss/modules/_sections.scss */
+/* line 60, ../scss/modules/_sections.scss */
 #page_body .narrow_column .page_action a:hover {
   background-color: #dfe6ed;
 }
-/* line 62, ../scss/modules/_sections.scss */
+/* line 68, ../scss/modules/_sections.scss */
 #page_body .wide_column_wrap {
   margin-left: 245px;
 }
-/* line 66, ../scss/modules/_sections.scss */
+/* line 72, ../scss/modules/_sections.scss */
 #page_body .wide_column_wrap .wide_column {
   position: relative;
   width: 550px;
 }
-/* line 70, ../scss/modules/_sections.scss */
-#page_body .wide_column_wrap .wide_column .page_info {
+/* line 76, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column a {
+  color: #2a5885;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 83, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info {
   padding: 15px 20px 20px;
+}
+/* line 86, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .page_top {
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e7e8ec;
+}
+/* line 90, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .page_top .page_name {
+  font-size: 19px;
+  line-height: 25px;
+  margin: -1px 0;
+}
+/* line 98, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .page_top .page_status {
+  font-size: 12.5px;
+  margin-top: 5px;
+  line-height: 18px;
+  color: #939393;
+}
+/* line 106, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .page_top .change_status {
+  padding: 2px 0 2px;
+  margin: 0 -6px;
+}
+/* line 110, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .page_top .change_status span {
+  display: block;
+  margin: 2px;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 6px;
+  color: #939393;
+}
+/* line 119, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .page_top .change_status:hover {
+  cursor: pointer;
+  background-color: #f0f2f5;
+}
+/* line 129, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info {
+  padding-top: 10px;
+  line-height: 150%;
+}
+/* line 133, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info .profile_row {
+  padding-top: 5px;
+}
+/* line 137, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info .pr_label {
+  float: left;
+  width: 165px;
+  color: #939393;
+}
+/* line 145, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info .pr_labeled a {
+  color: #2a5885;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 150, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info .pr_labeled a:hover {
+  text-decoration: underline;
+}
+/* line 158, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info .profile_more_info a {
+  display: block;
+  padding-left: 165px;
+  margin: 10px 0 -5px;
+  border-radius: 2px;
+  height: 34px;
+  line-height: 32px;
+}
+/* line 166, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_info .profile_info .profile_more_info a:hover {
+  background-color: #f0f2f5;
+  text-decoration: none;
+}
+/* line 179, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_counts {
+  text-align: center;
+  border-top: 1px solid #e7e8ec;
+  max-height: 69px;
+  overflow: hidden;
+}
+/* line 185, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_counts a.page_counter {
+  display: inline-block;
+  padding: 15px;
+  color: #2a5885;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 192, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_counts a.page_counter:hover div {
+  color: #2a5885;
+}
+/* line 196, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_counts a.page_counter .count {
+  font-size: 19px;
+  padding-bottom: 3px;
+  line-height: 21px;
+}
+/* line 202, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_block .page_counts a.page_counter .count_label {
+  color: #939393;
+  line-height: 15px;
+}
+/* line 214, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .page_photos {
+  height: 192px;
+}
+/* line 218, ../scss/modules/_sections.scss */
+#page_body .wide_column_wrap .wide_column .user_post {
+  height: 42px;
 }
 
 /* line 1, ../scss/modules/_navigation.scss */
